@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tela {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 9.5em;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--background-box);
+  border-radius: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.barra-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  width: 100px;
+  height: 90%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
