@@ -34,6 +34,20 @@ function Sidebar() {
             <span className='separator'></span>
 
             <li>
+                <a href="#graduation"
+                    className={
+                        active == 'graduation' || 
+                        url == 'graduation' ? 'active' : '' }
+                    onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
+                >
+
+                    <FontAwesomeIcon icon={faGraduationCap} size='2x' />
+                </a>
+            </li>
+
+            <span className='separator'></span>
+
+            <li>
                 <a href="#skill"
                     className={active == 'skill' || url == 'skill' ? 'active' : '' }
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
@@ -50,20 +64,6 @@ function Sidebar() {
                     onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
                 >
                     <FontAwesomeIcon icon={faLaptopCode} size='2x' />
-                </a>
-            </li>
-
-            <span className='separator'></span>
-
-            <li>
-                <a href="#graduation"
-                    className={
-                        active == 'graduation' || 
-                        url == 'graduation' ? 'active' : '' }
-                    onClick={(e) => locationPath(e.currentTarget.href.split('#')[1])}
-                >
-    
-                    <FontAwesomeIcon icon={faGraduationCap} size='2x' />
                 </a>
             </li>
 
